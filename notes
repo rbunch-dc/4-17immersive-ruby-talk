@@ -19,3 +19,114 @@ Ruby is a true OOP language (very difficulut to go procedural)
 - Easy to connect to a DB
 - TONS of gems 
 -- gems are --> node/npm, apt/ubuntu, brew/Mac, plugin/jQuery
+
+- which ruby
+- ruby -v
+- rvm -v
+- irb - interactive ruby
+
+- def hello
+- puts “hello, world”
+- end
+- hello() (don’t have to use () in ruby if there are no params)
+
+- def hello2(name)
+- puts “hello, “+name
+- end
+- hello2() - errors
+- hello2(“Rob”)
+
+- can run a ruby script with $ ruby hello.rb
+- Like Python and JS  ; are optional. A new line makes one 
+-- Not the case with PHP
+- Just like JS, it will not end a statement with a new line if it will cause a syntax error (end with a + for instance)
+- string literals (like “”” or ``)
+- Comments are #
+
+Numbers are the same
+You can switch to template literals just like JS, but with # instead of $
+Arrays are the same
+- can loop with .each method (same as map)
+Python dictionaries = Ruby hashes = JS objects (sort of)
+- bracket notation
+- rocket
+Python range is .. in Ruby
+
+Operators are the same
+- ==
+- !=
+- < and >
+- <= and >=
+- +=
+- -=
+Parallell assignment
+- is stupid
+- a, b, c = 10, 20, 30
+
+Conditionals
+- Same as python
+- REQUIRES end
+- instead of else if or elif, it’s elsie
+- UNLESS
+-- confusing
+- can use && or and 
+
+Loops
+- while and while do
+- until (opposite of while… like unless it’s cool but - confusing)
+- for
+- break
+
+Functions
+- are just like python
+- keyword def
+- MUST have end
+- return
+
+DO THE DC CHALLENGE
+- Classes - the heart of Ruby
+- make a class with keyword class (just like ES6 JS)
+- Has init
+- Variables
+--- Instance = @
+--- no @ = local (block, like let (very temporary)
+--- class variables = @@ (means it belongs to class, not object - essentially a global for the class)
+--- global = $ (evil, but sometimes necessary)
+- Vars are dynamic (don’t specify type, just like JS and Python)
+- Cannot access an instance var like you can in python or JS
+- Local vars usually have an _ in front, but don’t have to
+- A constant is all uppercase 
+--- You have to do this OUTSIDE of a method (including init)
+--- They are for use internally to the class
+- Self is the instance (same as Python, “this” in JS
+- true and false are protected
+- nil is the ruby way of “null”
+
+Access Control
+- Public
+--- Everything is public by default
+--- Except for initialize which is always private
+- Private
+--- Cannot be viewed by ANYTHING outside of the class
+- Protected
+--- Not available outside of the family (class or subclasses)
+
+Update all gems, install rails, check version (4+)
+$ gem update --system  
+$ gem install rails
+$ rails -v
+
+Create a new rails scaffold, run the server (port 5000 by default)
+$ rails new rails-test
+$ cd rails-test
+$ rails s
+
+Rails Tour
+- All controllers/views are in /app
+- All routes are in /config
+- welcome#index is going to set a route for /welcome, and look for the index function in the welcome controller.
+- The welcome controller’s functions are going to look for a view with the same name in the welcome view folder
+
+
+
+
